@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+// import { Routes, Route } from "react-router-dom"
 import Sidenavs from "../components/Sidenavs"
 // import Logo from "../assets/logo.png"
 import { Logo } from "../components/Icons"
