@@ -22,9 +22,7 @@ const Dashboard = () => {
         <Sidenavs isNavOut={isNavOut} />
 
         <div className="md:px-3 py-6 w-full md:m-0 mt-10">
-            <Routes>
-                <Route path="/"  element={<Repository />} />
-            </Routes>
+          <Repository />
         </div>
 
         <div onClick={()=> setIsNavOut(false)} className={isNavOut ? "bg-black opacity-30 fixed top-0 left-0 w-full h-full" : "hidden"}></div>
