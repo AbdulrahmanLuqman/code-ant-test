@@ -8,8 +8,7 @@ const App = () => {
     <div className="max-w-[1408px] mx-auto">
       <Routes>
         <Route path="/" element={<Dashboard />}/>
-        {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/login" element={<h1>Login</h1>} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   )
