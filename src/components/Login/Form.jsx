@@ -1,5 +1,6 @@
 import { useState } from "react"
-import Logo from "../../assets/logo.png"
+// import Logo from "../../assets/logo.png"
+import { Logo } from "../Icons"
 import Sass from "./Sass"
 import SelfHosted from "./SelfHosted"
 const Form = () => {
@@ -9,7 +10,8 @@ const Form = () => {
         <div className="w-full lg:h-[580px] border border-[#E9EAEB] rounded-xl bg-white py-9 px-6 space-y-6">
             <div className="flex flex-col items-center gap-5">
                 <div className="flex flex-col items-center gap-9">
-                    <img src={Logo} alt="logo" />
+                    {/* <img src={Logo} alt="logo" /> */}
+                    <div className="md:block hidden"><Logo/></div>
                     <h2 className="font-semibold text-[32px] text-[#181D27]">Welcome to CodeAnt AI</h2>
                 </div>
                 <div className="flex w-full">

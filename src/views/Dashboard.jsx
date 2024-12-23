@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Sidenavs from "../components/Sidenavs"
-import Logo from "../assets/logo.png"
+// import Logo from "../assets/logo.png"
+import { Logo } from "../components/Icons"
 
 import Repository from "./Repository"
 import { Hamburger, Close } from "../components/Icons"
@@ -11,7 +12,8 @@ const Dashboard = () => {
   return (
     <div className="md:flex md:gap-4">
       <header className="md:hidden z-10 w-full h-[64px] flex justify-between items-center fixed top-0 border bg-white p-4">
-        <img src={Logo} alt="Logo" />
+        {/* <img src={Logo} alt="Logo" /> */}
+        <div className="md:block hidden"><Logo/></div>
         <div onClick={()=> setIsNavOut(!isNavOut)} className="w-fit cursor-pointer">
           <span className={isNavOut ? "hidden" :"block"}> <Hamburger /></span>
           <span className={isNavOut ? "block" : "hidden"}><Close /></span>          
