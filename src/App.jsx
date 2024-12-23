@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 import Dashboard from "./views/Dashboard"
 import Login from "./views/Login"
@@ -6,12 +6,11 @@ import Login from "./views/Login"
 const App = () => {
   return (
     <div className="max-w-[1408px] mx-auto">
-      <Router>
-        <Routes>
+      <Routes>
         <Route path="/" element={<Dashboard />}/>
-        <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>
+        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<h1>Login</h1>} />
+      </Routes>
     </div>
   )
 }
